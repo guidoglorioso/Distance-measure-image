@@ -1,83 +1,113 @@
-# Template-proyectos
+# Proyecto de Procesamiento de Imágenes
 
-# Project Title
+## Descripción del Proyecto
 
-## Overview
+Este proyecto tiene como objetivo procesar imágenes para detectar y medir objetos utilizando referencias de color. Se utilizan técnicas de procesamiento de imágenes como la detección de bordes y la transformación de Hough para identificar líneas y calcular distancias. El proyecto está dividido en varias etapas, incluyendo la detección de referencias, la rotación de imágenes y la generación de cuadrículas para la medición.
 
-Provide a brief description of your project here. Explain what the project is about, its objectives, and any relevant background information. This section should give a high-level overview of the project's purpose and goals.
+## Estructura del Proyecto
+
+El proyecto está organizado en los siguientes directorios:
+project/ <br>
+├── docs/ <br>
+│ ├── reports/ <br>
+│ ├── specifications/<br> 
+│ └── user_manual/ <br>
+├── logs/ <br>
+├── scripts/ <br>
+│   ├── funciones_camara_IP.py <br>
+│   ├── funciones_procesamieto.py <br>
+│   ├── images/ <br>
+│   └── notebook_desarrollo.ipynb <br>
+│   <br>
+└── README.md<br>
+
+
+### scripts/
+
+- **funciones_camara_IP.py**: Contiene la clase `IP_CAMERA` para interactuar con la API de DroidCam.
+- **funciones_procesamieto.py**: Contiene funciones para el procesamiento de imágenes, detección y confección de cuadrículas.
+- **notebook_desarrollo.ipynb**: Notebook de Jupyter para el desarrollo y pruebas de las funciones de procesamiento de imágenes.
+- **pruebas_captura_imagen.ipynb**: Notebook de Jupyter para pruebas de captura de imágenes.
+
+## Requisitos
+
+- Python 3.11.2
+- OpenCV
+- NumPy
+- Matplotlib
+
+## Instalación
+
+1. Clona el repositorio:
+    ```sh
+    git clone https://github.com/tuusuario/proyecto-procesamiento-imagenes.git
+    cd proyecto-procesamiento-imagenes
+    ```
+
+2. Instala las dependencias:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+## Uso
+
+1. Ejecuta el notebook [notebook_desarrollo.ipynb](http://_vscodecontentref_/5) para probar las funciones de procesamiento de imágenes.
+2. Utiliza [funciones_procesamieto.py](http://_vscodecontentref_/6) para integrar las funciones en tu propio proyecto.
+
+---
+
+# Image Processing Project
+
+## Project Description
+
+This project aims to process images to detect and measure objects using color references. Image processing techniques such as edge detection and Hough transformation are used to identify lines and calculate distances. The project is divided into several stages, including reference detection, image rotation, and grid generation for measurement.
 
 ## Project Structure
 
 The project is organized into the following directories:
 
-project/  
-├── microcontroller/  
-│ ├── src/ # Microcontroller source code  
-│ ├── include/ # Header files  
-│ ├── libs/ # External libraries and reusable modules  
-│ ├── tests/ # Unit and integration tests for the microcontroller  
-│ └── build/ # Build and compilation files  
-├── simulations/  
-│ ├── src/ # Simulation source code  
-│ ├── results/ # Simulation results  
-│ ├── tests/ # Unit and integration tests for simulations  
-│ └── build/ # Build and compilation files for simulations  
-├── docs/ # Project documentation  
-│ ├── specifications/ # Technical and design specifications  
-│ ├── user_manual/ # User manuals and guides  
-│ └── reports/ # Progress and result reports  
-├── scripts/ # Utility and automation scripts  
-├── config/ # Configuration files and parameters  
-├── logs/ # Log files and records  
-└── README.md # Project overview  
-
-
-### microcontroller/
-
-- **src/**: Contains the source code for the microcontroller.
-- **include/**: Contains header files.
-- **libs/**: Contains external libraries and reusable modules.
-- **tests/**: Contains unit and integration tests for the microcontroller.
-- **build/**: Contains build and compilation files.
-
-### simulations/
-
-- **src/**: Contains the source code for simulations.
-- **results/**: Contains the results of the simulations.
-- **tests/**: Contains unit and integration tests for simulations.
-- **build/**: Contains build and compilation files for simulations.
-
-### docs/
-
-- **specifications/**: Contains technical and design specifications.
-- **user_manual/**: Contains user manuals and guides.
-- **reports/**: Contains progress and result reports.
+project/ <br>
+├── docs/ <br>
+│ ├── reports/ <br>
+│ ├── specifications/<br> 
+│ └── user_manual/ <br>
+├── logs/ <br>
+├── scripts/ <br>
+│   ├── funciones_camara_IP.py <br>
+│   ├── funciones_procesamieto.py <br>
+│   ├── images/ <br>
+│   └── notebook_desarrollo.ipynb <br>
+│   <br>
+└── README.md<br>
 
 ### scripts/
 
-- Contains utility and automation scripts.
+- **funciones_camara_IP.py**: Contains the [IP_CAMERA](http://_vscodecontentref_/7) class to interact with the DroidCam API.
+- **funciones_procesamieto.py**: Contains functions for image processing, detection, and grid generation.
+- **notebook_desarrollo.ipynb**: Jupyter notebook for developing and testing image processing functions.
+- **pruebas_captura_imagen.ipynb**: Jupyter notebook for image capture tests.
 
-### config/
+## Requirements
 
-- Contains configuration files and parameters.
+- Python 3.11.2
+- OpenCV
+- NumPy
+- Matplotlib
 
-### logs/
+## Installation
 
-- Contains log files and records.
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/yourusername/image-processing-project.git
+    cd image-processing-project
+    ```
 
-## Getting Started
+2. Install the dependencies:
+    ```sh
+    pip install -r requirements.txt
+    ```
 
-Provide instructions on how to get a copy of the project up and running on a local machine for development and testing purposes.
+## Usage
 
-### Prerequisites
-
-List any software, libraries, or tools required to work on the project.
-
-### Installation
-
-Step-by-step guide on how to install and set up the project. Include any commands that need to be run.
-
-```sh
-# Example
-git clone https://github.com/yourusername/project.git
-cd project
+1. Run the [notebook_desarrollo.ipynb](http://_vscodecontentref_/8) notebook to test the image processing functions.
+2. Use [funciones_procesamieto.py](http://_vscodecontentref_/9) to integrate the functions into your own project.

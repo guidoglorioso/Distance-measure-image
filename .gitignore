@@ -91,3 +91,8 @@ $RECYCLE.BIN/
 
 # Jupyter Notebook
 .ipynb_checkpoints
+
+
+# archivos para excluir
+
+pruebas*
