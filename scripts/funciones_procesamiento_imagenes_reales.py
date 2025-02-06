@@ -55,7 +55,7 @@ def filtro_color(img : np.array, color_filtro : str) -> np.array:
 
     # limites de deteccion
     if color_filtro == "negro":
-        limite_superior= np.array([90, 90,90]) # [200, 130,100] # Detecto Negro 
+        limite_superior= np.array([190, 75,75]) # [90, 90,90] # Detecto Negro 
         limite_inferior = np.array([0, 0, 0])     # [0, 0, 0]
 
     elif color_filtro == "amarillo":
@@ -65,7 +65,7 @@ def filtro_color(img : np.array, color_filtro : str) -> np.array:
         limite_inferior = np.array([15, 140, 70])  # img caso real
         limite_superior = np.array([35, 255, 255]) # img caso real
     elif color_filtro == "verde":
-        limite_superior= np.array([90, 250,200])  # [90, 250,200] Detecto verde 
+        limite_superior= np.array([100, 260,280])  # [90, 250,200] Detecto verde 
         limite_inferior = np.array([60, 55, 30])  # [60, 55, 30]
     
     # Establezco color blanco a los objetos filtros obtenidos
@@ -117,7 +117,6 @@ def detectar_referencia_px(img : np.array, color_ref : str = "verde",ref :float 
     
     if _lineas is None:
         raise ValueError(f"La imagen no posee referencia adecuada")
-    
     else:
         # Promedio y obtengo valor medio de los angulos detectados
         _angulos = np.array([np.degrees(np.arctan((y2 - y1)/(x2 - x1))) for linea in _lineas for x1, y1, x2, y2 in linea]) 
